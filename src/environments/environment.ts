@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  assetsURL: ""
+  assetsURL: "http://localhost:5000"
 };
 
 /*

@@ -6,6 +6,14 @@
   flex: 1;
 }
 
+.carousel__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // height: 100vh;
+  // justify-content: center;
+}
+
 .carousel {
   position: relative;
   height: 200px;
