@@ -11,8 +11,8 @@ export class ContentService {
   constructor(private httpClient: HttpClient,
     private sanitizer: DomSanitizer) { }
 
-  public buildRequest(path: string, options?: any): any  {
+  public buildRequest(path: string, options?: any, domain?: string): any  {
 
-    return this.httpClient.get(`${environment.assetsURL}/${path}`, options);
+    return this.httpClient.get(`${domain? domain : environment.assetsURL}/${path}`, options);
   }
 }

@@ -1,0 +1,25 @@
+<div class="carousel__container">
+  <ng-container *ngFor="let item of carouselItems; let i = index">
+    <ng-container *ngIf="i === currentSlide">
+      <div class="carousel">
+        <div class="content">
+          <img [src]="item.img || carouselImgNF" class="slide" [alt]="" />
+          <button *ngIf="item.buttonLink && item.buttonText" class="carousel-slide-button"
+            (click)="onLinkClick(item.buttonLink)">
+            <span id="button-text">{{ item?.buttonText || '' }}</span>
+          </button>
+          <button class="control prev" (click)="onPreviousClick()">
+            <span class="arrow left"></span>
+          </button>
+          <button class="control next" (click)="onNextClick()">
+            <span class="arrow right"></span>
+          </button>
+        </div>
+      </div>
+      <div class="description-block">
+        <span class="carousel-span-description">{{ item?.description || '' }}
+        </span>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>

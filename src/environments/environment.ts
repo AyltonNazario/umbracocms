@@ -4,7 +4,14 @@
 
 export const environment = {
   production: false,
-  assetsURL: "http://localhost:5000"
+  assetsURL: "http://localhost:5000",
+  contentStack: {
+    api_key: "blt61764a790c9b3eb0",
+    delivery_token: "csc4ae88a729cd5ac50d042b9f",
+    environment: "production",
+    content_type_uid: "investmentnews",
+    endpoint: `https://cdn.contentstack.io`
+  }
 };
 
 /*
