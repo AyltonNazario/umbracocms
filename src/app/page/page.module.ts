@@ -5,11 +5,13 @@ import { PageRoutingModule } from './page-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { PiranhacmsComponent } from './piranhacms/piranhacms.component';
 import { ContentstackComponent } from './contentstack/contentstack.component';
+import { OrchardcmsComponent } from './orchardcms/orchardcms.component';
 
 @NgModule({
   declarations: [
     PiranhacmsComponent,
     ContentstackComponent,
+    OrchardcmsComponent,
   ],
   imports: [
     CommonModule,
